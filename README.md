@@ -4,7 +4,7 @@ Este proyecto implementa un pipeline ETL (Extracción, Transformación y Carga) 
 
 ## Objetivo
 
-- Extraer datos del INEC o MOPT.
+- Extraer datos del COSEVI.
 - Limpiar y normalizar los datos utilizando Python.
 - Cargar los datos en una base de datos PostgreSQL.
 - Estructurar el modelo en un esquema dimensional tipo estrella para facilitar el análisis.
