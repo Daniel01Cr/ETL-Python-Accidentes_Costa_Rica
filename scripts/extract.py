@@ -1,7 +1,7 @@
 import requests
 import os
 
-# URL del archivo CSV (reemplazar por la real)
+# URL del archivo CSV
 url = "https://datosabiertos.csv.go.cr/datasets/193472-consolidado-de-accidentes-de-transito-con-victimas.download/"
 
 # Ruta de guardado local
