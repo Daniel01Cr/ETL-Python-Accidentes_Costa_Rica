@@ -21,3 +21,11 @@ Este proyecto implementa un pipeline ETL (Extracción, Transformación y Carga) 
 
    ```bash
    pip install -r requirements.txt
+
+
+2. Ejecuta el pipeline completo:
+
+   ```bash
+   python scripts/run_etl.py
+
+   

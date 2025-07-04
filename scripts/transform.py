@@ -1,14 +1,17 @@
 import pandas as pd
 import os
+import unidecode  
 
 input_path = "data/accidentes_raw.csv"
 output_path = "data/accidentes_clean.csv"
 
+
 def limpiar_datos():
+
     df = pd.read_csv(input_path)
 
     # Limpieza de columnas
-    df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
+    df.columns = [unidecode.unidecode(col.strip().lower().replace(" ", "_")) for col in df.columns]
 
     # Ejemplo de conversión de fecha si hay una columna llamada 'fecha'
     if "fecha" in df.columns:
